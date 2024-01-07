@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,800&display=swap');
+
+
+body {
+   height: 100vh;
+}
+
+.frontpage{
+   padding-bottom: calc(10rem - 4.5rem);
+   background: linear-gradient(to left, rgba(1, 1, 1, 0.8) 0%, rgba(67, 8, 11, 0.8) 100%), url(6365.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size: cover;
+}
+
+.frontpage {
+   height: 100vh;
+   min-height: 40rem;
+   padding-top: 4.5rem;
+   padding-bottom: 0;
+}
+
+.cover_dynamic {
+   display: inline-block;
+   padding: 20px;
+}
+
+#txt1, #txt2, #txt3, #txt4{
+   font-size: 50px;
+}
+
+
+.button {
+   display: inline-flex;
+   height: 45px;
+   width: 180px;
+   border: 2px solid #BFC0C0;
+   margin: 20px 20px 20px 20px;
+   color: #BFC0C0;
+   font-size: 25px;
+   letter-spacing: 2px;
+   font-family: 'Nunito',sans-serif;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+ }
+
+ /* button 5 */
+ #button-5 {
+   position: absolute;
+   right: 30px;
+   bottom: 30px;
+   overflow: hidden;
+   cursor: pointer;
+ }
+
+ #button-5 a {
+   position: relative;
+   transition: all .45s ease-Out;
+ }
+
+
+ #button-5:hover #translate {
+   left: 0;
+ }
+ 
+ #button-5:hover a {
+   color: #707fbe;
+ }
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Nunito',sans-serif;
+    padding-top: 90px;
+}
+
+#username, #password, h3, #fullname, #password_comfirm, #username_reg, #password2{
+    width: 350px;
+    height: 45px;
+    margin: 10px;
+    color: #462f2b;
+    font-size: 20px;
+ }
+
+ h5{
+    margin: 20px;
+    color: #7a7a83;
+ }
+
+ h5:hover{
+    color: black;
+    cursor: pointer;
+ }
+
+ #container1, #container2{
+    margin: 50px;
+    padding: 10px;
+    width: 450px;
+    height: 350px;
+    background-color: white;
+    border-radius: 5px;
+    border-top: 20px solid #462f23;
+    box-shadow: 15px 5px 15px -15px #000, -15px 0 15px -15px #000;
+    position: relative;
+    margin: auto;
+    top: 100px;
+    text-align: center;
+ }
+
+ .submit{
+    font-size: 20px;
+    color: white;
+    background-color: #462f2b;
+    width: 350px;
+    height: 30px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 0;
+ }
+
+ .submit:hover{
+    background: #d7b4c6;
+    cursor: pointer;
+ }
+
+ #container2{
+    visibility: hidden;
+    height: 450px;
+ }
+

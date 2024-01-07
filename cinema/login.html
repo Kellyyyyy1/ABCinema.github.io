@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>login</title>
+
+
+  <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login_page">
+    <div id="container1">
+
+      <div class="login">
+        <h3>登入Login</h3>
+
+        <form action="nowShowing.html">
+          
+          <input type="text" name="username" id="username" placeholder="帳號" required>
+          <div class="tab"></div>
+          <input type="text" name="password" id="password" placeholder="密碼" required>
+          <div class="tab"></div>
+          <input type="submit" value="登入" class="submit">
+
+        </form>
+
+        <h5 onclick="show_hide()">註冊帳號</h5>
+
+      </div><!--login end-->
+    </div><!--container end-->
+  </div><!--login_page end-->
+
+  <div class="register_page">
+    <div id="container2">
+
+      <div class="register">
+
+        <h3>註冊 Sign up</h3>
+
+        <form action="nowShowing.html">
+          <input type="text" name="fullname" id="fullname" placeholder="王曉明(全名)" required>
+          <div class="tab"></div>
+          <input type="text" name="username_reg" id="username_reg" placeholder="帳號" required>
+          <div class="tab"></div>
+          <input type="text" name="password2" id="password2" placeholder="密碼(4-12字)" minlength="4" maxlength="12" required>
+          <div class="tab"></div>
+          <input type="text" name="password_comfirm" id="password_comfirm" placeholder="確認密碼" required>
+          <div class="tab"></div>
+
+          <input type="submit" value="註冊" class="submit">
+        </form>
+
+        <h5 onclilk="show_hide()">登入帳號</h5>
+
+      </div><!--register end-->
+    </div><!--container2 end-->
+  </div><!--register_page end-->
+
+</body><!-- login -->
+
+        
+  
+  
+
+  <div id="register" class="register">
+    
+
+      
+      </form>
+</div>
+<style>
+body{
+    background-color: whitesmoke;
+    font-family: 'Nunito',sans-serif;
+    padding-top: 90px;
+}
+
+#username, #password, h3, #fullname, #password_comfirm, #username_reg, #password2{
+    width: 350px;
+    height: 45px;
+    margin: 10px;
+    color: #462f2b;
+    font-size: 20px;
+ }
+
+ h5{
+    margin: 20px;
+    color: #7a7a83;
+ }
+
+ h5:hover{
+    color: black;
+    cursor: pointer;
+ }
+
+ #container1, #container2{
+    margin: 50px;
+    padding: 10px;
+    width: 450px;
+    height: 350px;
+    background-color: white;
+    border-radius: 5px;
+    border-top: 20px solid #462f23;
+    box-shadow: 15px 5px 15px -15px #000, -15px 0 15px -15px #000;
+    position: relative;
+    margin: auto;
+    top: 100px;
+    text-align: center;
+ }
+
+ .submit{
+    font-size: 20px;
+    color: white;
+    background-color: #462f2b;
+    width: 350px;
+    height: 30px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 0;
+ }
+
+ .submit:hover{
+    background: #d7b4c6;
+    cursor: pointer;
+ }
+
+ #container2{
+    visibility: hidden;
+    height: 450px;
+ }
+
+
+</style>

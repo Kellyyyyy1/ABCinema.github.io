@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="assets/favicon.ico">
+  <title>ABCinema</title>
+  <script src="https://kit.fontawesome.com/4955124e8b.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="movie1.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/nowShowing.css"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav id="firstNavbar" class="navbar navbar-expand-md navbar-dark  fixed-top" style="background-color: #462f2b;">
+    <a class="navbar-brand" href="mainPage.html"><i class="fas fa-check-double">.</i>ABCinema</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link hoverclass" href="mainPage.html"> 搜尋你想要的電影</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link hoverclass" href="contact.html"> ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a id="Logout" class="nav-link" href="index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="introdutionBox" id="introdutionBox">
+    <div class="container1" id="container1">
+        <div class="part">
+            <div style="flex: 1 1 0%; text-align: center;">
+                <div class="picdiv">
+                    <div style="width: 100%; padding-top: 142.326%; position: relative; overflow: hidden;">
+                        <div style="position: absolute; inset: 0px; white-space: nowrap;">
+                            <div class="piccontainer">
+                                <img src="assets/水行俠.jpg" alt="水行俠">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info" style="flex: 3 1 0%; padding: 1em 2em;">
+        <div class="name">水行俠 失落王國</div>
+        <div class="engname">AQUAMAN &amp; THE LOST KINGDOM</div>
+        <div class="class">
+            <div class="text">級別</div>
+            <div class="textdiv">
+                <div class="class_3"><img src="assets/ic_rating_p.png" alt="6歲以上可觀看"></div>
+            </div>
+        </div>
+        <div class="class">
+            <div class="text">片長</div>
+            <div class="textdiv">124分</div>
+        </div>
+        <div class="class">
+            <div class="text">上映日</div>
+            <div class="textdiv"><span>2023/12/20</span></div>
+        </div>
+        <div class="class">
+                <div class="text">上映影城</div>
+                <div class="textdiv">ABCinema</div>
+            </div>
+            <div class="class">
+                <div class="text">類型</div>
+                <div class="textdiv">動作，冒險</div>
+            </div>
+            <div class="class">
+                <div class="text">演員</div>
+                <div class="textdiv">傑森摩莫亞、班艾佛列克、派翠克威爾森、葉海亞阿巴杜馬汀二世、安柏赫德</div>
+            </div>
+            <div class="class">
+                <div class="text">導演</div>
+                <div class="textdiv">溫子仁</div>
+            </div>
+            <div class="class">
+                <div class="text">簡介</div>
+                <div class="textdiv">
+                    <div>
+                        <div class="intro">
+                            <div>由溫子仁執導、傑森摩莫亞主演，敘述水行俠必須建立盟友，以保護亞特蘭提斯及世界受到不可逆的破壞。</div>
+                        </div>
+                        <button class="sc-iGgWBj ffxCYX btn btn-outline-primary">更多…</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trailer">
+            <div class="trailer_1">
+                <div class="trailer_2">電影預告</div>
+            </div>
+        </div>
+        <div style="background: black;">
+            <div class="sc-fhzFiK lkVMhS">
+                <div class="sc-jxOSlx llWyys">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/rvWUuaUsiW0?rel=0" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        <div align="center" class="buyticket" >
+            <button id="go-to-seat" class="go-to-seat" onclick="window.location.href='bookingseat.html'">立即訂票</button>
+        </div>
+        <div class="tab"></div>
+
+    
+
+
+<style>
+html{
+	zoom: 82%;
+}
+
+#firstNavbar .navbar-brand{
+	color:#EA1C2C;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+#firstNavbar{
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+#firstNavbar .nav-link{
+	color: white;
+}
+#firstNavbar .nav-link:hover{
+	color: #EA1C2C;
+}
+/* animate */
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+
+.navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle span:nth-child(3) {
+    opacity: 0;
+}
+
+.navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+}
+
+.themecolor{
+	color: #462f2b;
+}
+
+</style>

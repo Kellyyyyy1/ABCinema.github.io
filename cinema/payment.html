@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+
+    <link rel="stylesheet" href="paymentstyle.css">
+</head>
+<body>
+    <div class="container">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">billing address</h3>
+
+                    <div class="inputBox">
+                        <span>full name:</span>
+                        <input type="text" placeholder="Xiao-ming Wang">
+                    </div>
+                    <div class="inputBox">
+                        <span>email:</span>
+                        <input type="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address:</span>
+                        <input type="text" placeholder="Room-street-Locality">
+                    </div>
+                    <div class="inputBox">
+                        <span>City:</span>
+                        <input type="text" placeholder="Tainan">
+                    </div>
+                    <div class="inputBox">
+                        <span>State:</span>
+                        <input type="text" placeholder="Taiwan">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code:</span>
+                        <input type="text" placeholder="123-45">
+                    </div>
+
+                </div>
+
+            
+                <div class="col">
+                        <h3 class="title">payment</h3>
+
+                        <div class="inputBox">
+                            <span>card Accepted:</span>
+                            <img src="card.png">
+                        </div>
+                        <div class="inputBox">
+                            <span>name on card:</span>
+                            <input type="text" placeholder="Xiao-ming Wang">
+                        </div>
+                        <div class="inputBox">
+                            <span>credit card number:</span>
+                            <input type="text" placeholder="1111-2222-3333-4444">
+                        </div>
+                        <div class="inputBox">
+                            <span>Exp Month:</span>
+                            <input type="text" placeholder="01" minlength="2" maxlength="2">
+                        </div>
+                        <div class="inputBox">
+                            <span>Exp Year:</span>
+                            <input type="text" placeholder="2024" minlength="4" maxlength="4">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV:</span>
+                            <input type="text" placeholder="000" minlength="3" maxlength="3" size="5">
+                        </div>
+                    </div>
+                <input type="button" value="確認付款" class="submit-btn">
+                <p class="show"></p>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+            var button = document.querySelector('.submit-btn');
+        var showtxt = document.querySelector('.show');
+
+        function popup2(e) {
+            window.confirm('確定付款');
+            if (confirm('確認付款') == true) {
+                showtxt.innerHTML = '付款成功，請至櫃台取票';
+            } else {
+                showtxt.innerHTML = '您已取消付款';
+            }
+
+        };
+        button.addEventListener('click', popup2);
+</script>

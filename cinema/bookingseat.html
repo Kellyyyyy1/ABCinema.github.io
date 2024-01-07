@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bookingseatstyle.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="bookingform">
+      <div class="ticket-container">
+        <label> 請選擇要的票種 : </label>
+        <select id="ticket">
+        
+          <option value="250">一般票250元</option>
+          <option value="290">一般票+爆米花小份290元</option>
+          <option value="320">一般票+爆米花大份320元</option>
+          <option value="450">一般票+套餐一份450元</option>
+        </select>
+      </div>
+
+      <ul class="showcase">
+        <li>
+          <div class="seat"></div>
+          <small>可選擇</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>已選擇</small>
+        </li>
+        <li>
+          <div class="seat sold"></div>
+          <small>已售完</small>
+        </li>
+      </ul>
+      <div class="container">
+        <div class="screen"></div>
+
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      </div>
+    <p class="text">
+      你已選擇 <span id="count">0</span> 個座位 總共<span
+        id="total">0</span>元
+    </p>
+    <div class="payment_link">
+      <a href="payment.html">
+          <button type="submit">PAY
+      </a>
+      </button>
+      </div>
+      <script src="scripts/bookingseat.js"></script>
+  </body>
+</html>
